@@ -1,10 +1,16 @@
-var app4 = new Vue({
-    el: '#app-4',
+var app7 = new Vue({
+    el: '#app-7',
     data: {
+        message: '',
         todos: [
-            { text: 'learn man'},
-            { text: 'äte sjnupp'},
-            { text: 'gimmie mwekf'}
+            { text: 'sjora bil'},
+            { text: 'äta bil'},
+            { text: 'korva bil'}
         ]
+    },
+    methods: {
+        addToList: function () {
+            app7.todos.push({ text: this.message})
+        }
     }
-  })
+})  

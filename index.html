@@ -9,13 +9,15 @@
     <title>Document</title>
 </head>
 <body>
-    <div id="app-4">
-        <ol>
-       <li v-for="todo in todos">
-         {{ todo.text }}
-        </li>
-       </ol>
-    </div>
- 
+<div id="app-7">
+    <input type="text" v-model="message" placeholder="add an item">
+   <p>{{ message }}</p>
+    <ol>
+  <li v-for="todo in todos">
+      {{ todo.text }}
+  </li>
+</ol>
+  <button v-on:click="addToList">Add to list</button>
+ </div>
 </body>
 </html>
